@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll('button');
 let plyr = 0; 
 let com = 0; 
 let drw = 0;
+let rounds = 0;
 const end = document.querySelectorAll('.end');
 const option = document.querySelectorAll('.option');
 end.forEach((element) => {
@@ -19,6 +20,9 @@ buttons.forEach((button) => {
             end.forEach((element) => {
                 hide(element);
             });
+            rounds = 0;
+            document.getElementById('rounds').textContent = null;
+
         } else {
             let playerChoice = button.id;
             let computerChoice = computerPlay();
@@ -116,6 +120,8 @@ function game (res) {
         default:
             break;
     }
+    ++rounds;
+    document.getElementById('rounds').textContent = 'You have played ' + rounds + '.';
     console.log('w = ' + plyr + ' L = ' + com + ' D = ' + drw);
     if(plyr == 5 || com == 5){
         let resMessage;

@@ -9,48 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="center">Rock Paper Scissors</h1>
-        <br >
-        <br >
-        <section class="start center" id="start">
-            <h2>First to 5 wins</h2>
-            <h3><strong>Rules</strong></h3>
-            <ul>
-                <li>Rock &gt; Scissors &amp; Rock &lt; Paper</li>
-                <li>Paper &gt; Rock &amp; Paper &lt; Scissors</li>
-                <li>Scissors &gt; Paper &amp; Scissors &lt; Rock</li>
-            </ul>        
-            <button class="play" id="play">Let's Play</button>
-        </section>
-        <section class="center" id="choices">
-            <button class="option" id="rock" disabled>
-                <i class="fa fa-hand-rock-o"></i>
-            </button>
-            <button class="option" id="paper" disabled>
-                <i class="fa fa-hand-paper-o"></i>
-            </button>
-            <button class="option" id="scissors" disabled>
-                <i class="fa fa-hand-scissors-o"></i>
-            </button>
-        </section> 
-
-        <section class="end">
-            <h2 id="result" class="end"></h2>
-            <br class="end">
-            <br class="end">
-            <p id="win" class="end"></p>
-            <p id="loss" class="end"></p>
-            <p id="draw" class="end"></p>
-            <button class="reset" id="reset" class="end">Play Again</button>
-        </section>
-
-        <br >
-        <br >
-        <br >
-        <br >
-        <a href="https://icons8.com">Icon pack by Icons8</a>
-    </div>
+    <article class="container">
+        <header>
+            <h1 class="center">Rock Paper Scissors</h1>
+        </header>
+        <main>
+            <section class="start center" id="start">
+                <h2>First to 5 wins</h2>
+                <h3><strong>Rules</strong></h3>
+                <ul>
+                    <li>Rock &gt; Scissors &amp; Rock &lt; Paper</li>
+                    <li>Paper &gt; Rock &amp; Paper &lt; Scissors</li>
+                    <li>Scissors &gt; Paper &amp; Scissors &lt; Rock</li>
+                </ul>        
+                <button class="play" id="play">Let's Play</button>
+            </section>
+            <section class="center" id="choices">
+                <button class="option" id="rock" disabled>
+                    <i class="fa fa-hand-rock-o"></i>
+                </button>
+                <button class="option" id="paper" disabled>
+                    <i class="fa fa-hand-paper-o"></i>
+                </button>
+                <button class="option" id="scissors" disabled>
+                    <i class="fa fa-hand-scissors-o"></i>
+                </button>
+                <br >
+                <br >
+                <span id="rounds"></span>
+            </section> 
+    
+            <section class="end center">
+                <h2 id="result"></h2>
+                <br>
+                <br>
+                <p id="win"></p>
+                <p id="loss"></p>
+                <p id="draw"></p>
+                <button id="reset" class="reset play">Play Again</button>
+            </section>
+        </main>        
+        <footer>
+            <span class="left"><a href="https://icons8.com">Icon pack by Icons8</a></span>
+            <span class="middle">Created by <a href="https://https://github.com/NathanPearson/">Nathan Pearson</a>, powered by 
+                <i class="fa fa-beer"></i>,<i class="fa fa-coffee"></i>, &amp; a <i class="fa fa-heart"></i> of <i class="fa fa-code"></i> 
+            </span>
+            <span class="right">&copy; <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script>, NMP</span>
+        </footer>       
+        
+    </article>
     <script src="scripts.js"></script>
 </body>
 </html>
