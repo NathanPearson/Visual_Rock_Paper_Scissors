@@ -1,0 +1,30 @@
+button:disabled {
+    background: grey;
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+ul {
+    list-style-type: none;    
+}
+.play{
+    height:100px;
+    width: 100px;
+    background: green;
+}
+.option {
+    height: 100px;
+    width: 100px;
+    background: skyblue;
+}
+.option.enabled:hover {
+    height: 110px;
+    width: 110px;
+    background: rgb(71, 120, 139);
+}
+.remove {
+    display: none;
+}
