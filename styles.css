@@ -1,26 +1,19 @@
-html, body {
-    width: 100%;
-    height: 100%;    
+html {
+    height: 100%;
 }
 body {
-    background: #b68b00;
+    background: #99A0F5;
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
-article {
-    min-height: 100%;
+.site {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    align-items: stretch;
 }
-main {
-    flex-grow: 1;
-}
-header, main, footer {
-    flex-shrink: 0;
+.site-content {
+    flex: 1;
 }
 
 .container {
@@ -29,14 +22,11 @@ header, main, footer {
     width: 92%;
     display: flex
 }
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
+footer {    
     background-color: #efefef;
+    height: 50px;
     text-align: center;
+    align-items: center;
     display: grid;
     grid-template-columns: auto auto auto;    
 }
